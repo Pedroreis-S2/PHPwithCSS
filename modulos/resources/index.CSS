@@ -1,0 +1,127 @@
+*{
+    font-family: "Oswald", sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 120px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "cabecalho" "principal" "rodape";
+}
+.cabecalho{
+    grid-area: cabecalho;
+    background-color: rgb(7, 241, 206);
+    color: rgb(239, 232, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    z-index: 1;
+    /*sombra do cabecalho*/
+    box-shadow: 0px 4px 45px 0px rgb(226, 220, 220);
+    
+}
+.cabecalho > h1{
+    margin: -20px;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.cabecalho > h2{
+    font-weight: 300;
+    margin-bottom: 0px;
+    
+}
+
+.principal{
+    grid-area: principal;
+    height: calc(100vh - 100px);
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+}
+.content{
+    position: relative;
+    height: 100%;
+    overflow: scroll;
+    background-color: black;
+    padding: 20px;
+    box-shadow: white;
+}
+.modulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.modulo{
+    flex-basis: 32%;
+}
+.modulo > h3 {
+    background-color: rgb(7, 241, 206);
+    margin: 0px;
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding:10px 20px ;
+    
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: rgb(7, 241, 206);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    color: grey;
+}
+
+.modulo > ul{
+    margin: 10px;
+    padding: 10px;
+    /* transforma os itens da lista em numeros*/
+    list-style-type: decimal;
+    /* faz o cursos criar um sombreamento ao passar o mouse*/
+    cursor: pointer;
+}
+.modulo > ul >li >a {
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+/*metodo pro li criar o sombreamento do cursor no componente*/
+.modulo > ul > li:hover{
+    background-color: rgba(116, 113, 113, 0.259);
+}
+/*seletor de cores dos quadrados*/
+.modulo.um{border: 2px solid rgb(7, 241, 206);}
+.modulo.um > h3 {background-color: rgb(7, 241, 206);}
+
+.modulo.dois{border: 2px solid rgb(7, 241, 206);}
+.modulo.dois > h3 {background-color: rgb(7, 241, 206);}
+
+.modulo.tres{border: 2px solid rgb(7, 241, 206);}
+.modulo.tres > h3 {background-color: rgb(7, 241, 206);}
+
+.modulo.quatro{border: 2px solid rgb(7, 241, 206);}
+.modulo.quatro > h3 {background-color: rgb(7, 241, 206);}
+
+.modulo.cinco{border: 2px solid rgb(7, 241, 206);}
+.modulo.cinco > h3 {background-color: rgb(7, 241, 206);}
+
+.modulo.seis{border: 2px solid rgb(7, 241, 206);}
+.modulo.seis > h3 {background-color: rgb(7, 241, 206);}
+
+.modulo.sete{border: 2px solid rgb(7, 241, 206);}
+.modulo.sete > h3 {background-color: rgb(7, 241, 206);}
+
+.modulo.oito{border: 2px solid rgb(7, 241, 206);}
+.modulo.oito > h3 {background-color: rgb(7, 241, 206);}
+
+.modulo.nove{border: 2px solid rgb(7, 241, 206);}
+.modulo.nove > h3 {background-color: rgb(7, 241, 206);}
+
